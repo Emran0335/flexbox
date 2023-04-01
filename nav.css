@@ -1,0 +1,36 @@
+nav {
+  font-size: 2rem;
+  background-color: #f1f1f1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+nav ul li {
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+  /* flex-basis: auto; */
+  flex: auto;
+}
+
+nav ul li:hover {
+  background-color: #555;
+  color: white;
+}
+
+@media all and (max-width: 400px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
+  }
+}
